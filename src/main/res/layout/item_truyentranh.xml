@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <ImageView
+            android:id="@+id/img_truyentranh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vidu" />
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tv_ngaydang"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:background="#9E423F3F"
+            android:gravity="center"
+            android:text="Chap 889"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_tentruyen"
+        android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#E8E5E5"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Nghich thien ta than"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textColor="#EA0505"
+            android:textSize="15sp"
+            />
+
+
+</LinearLayout>

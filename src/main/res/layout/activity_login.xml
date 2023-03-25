@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/login2"
+        android:scaleType="centerCrop"
+        android:layout_height="280dp"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_form"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng Nhập"
+            android:gravity="left"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="60dp"
+            android:textColor="#3B96F8"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Username"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:textColorHint="#3B96F8"
+            android:padding="1dp"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:background="@drawable/custom_editext"/>
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="password"
+            android:maxLength="15"
+            android:inputType="textPassword"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:textColorHint="#3B96F8"
+            android:padding="5dp"
+            android:drawableStart="@drawable/password"
+            android:background="@drawable/custom_editext"/>
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Đăng Nhập"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/btn_login"
+            />
+
+        <TextView
+            android:id="@+id/tv_dangky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Đăng Ký"
+            android:layout_marginTop="10dp"
+            android:textColor="#F60710"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

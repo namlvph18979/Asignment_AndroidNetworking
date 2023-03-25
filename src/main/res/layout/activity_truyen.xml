@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_truyen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp">
+
+        <ImageView
+            android:id="@+id/img_anhnen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vidu2" />
+
+
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_gravity="top|left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_namecomic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Tokyo Ghoul"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"/>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_chitiet"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô Tả"
+            android:layout_gravity="top|left"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_tieude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="17sp"
+            android:text="The story follows Ken Kaneki, a student who barely survives a deadly encounter with Rize Kamishiro, his date who reveals herself as a ghoul and tries to eat him. He is taken to the hospital in critical condition."
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:drawableBottom="@drawable/baseline_expand_more_24"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_doctruyen"
+        android:layout_width="160dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_height="50dp"
+        android:text="Đọc truyện"
+        android:background="@drawable/custom_button"
+        android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_weight="3"
+                android:id="@+id/tv_comment"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textSize="18sp"
+                android:hint="add your comment..."
+                android:gravity="top"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/custom_editext"
+                />
+            <Button
+                android:id="@+id/btn_sendmsg"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Gửi"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:layout_gravity="bottom"
+                android:background="@drawable/custom_editext"
+                android:layout_marginLeft="6dp"/>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Comment"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+
+
+    <ListView
+        android:id="@+id/lv_listcomment"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="500dp"
+        />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

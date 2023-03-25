@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/signup1"
+        android:scaleType="centerCrop"
+        android:layout_height="270dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/custom_form"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:text="Đăng Ký"
+            android:textColor="#3B96F8"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_username_dk"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/custom_editext"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:gravity="center"
+            android:inputType="textFilter"
+            android:maxLength="20"
+            android:hint="Username"
+            android:padding="1dp"
+            android:textColorHint="#3B96F8" />
+
+        <EditText
+            android:id="@+id/edt_email_dk"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/custom_editext"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="1dp"
+            android:textColorHint="#3B96F8" />
+
+        <EditText
+            android:id="@+id/edt_password_dk"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/custom_editext"
+            android:drawableStart="@drawable/password"
+            android:gravity="center"
+            android:hint="Password"
+            android:maxLength="20"
+            android:padding="1dp"
+            android:textColorHint="#3B96F8" />
+
+        <EditText
+            android:id="@+id/edt_repassword_dk"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/custom_editext"
+            android:drawableStart="@drawable/password"
+            android:gravity="center"
+            android:hint="RePassword"
+            android:maxLength="15"
+            android:padding="5dp"
+            android:textColorHint="#3B96F8" />
+
+        <EditText
+            android:id="@+id/edt_fullname_dk"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/custom_editext"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:gravity="center"
+            android:hint="Full name"
+            android:padding="1dp"
+            android:textColorHint="#3B96F8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btn_accept_dk"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:text="Đăng Ký"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_login_dk"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:gravity="center"
+                android:text="Đăng Nhập"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
